@@ -1,0 +1,38 @@
+/*== PRIMARY ==*/
+
+$c-orange: hsl(26, 100%, 55%);
+$c-pale-orange: hsl(25, 100%, 94%);
+
+/*== NEUTRAL ==*/
+
+$c-very-vark-blue: hsl(220, 13%, 13%);
+$c-dark-grayish-blue: hsl(219, 9%, 45%);
+$c-grayish-blue: hsl(220, 14%, 75%);
+$c-light-grayish-blue: hsl(223, 64%, 98%);
+$c-white: hsl(0, 0%, 100%);
+
+//(with 75% opacity for lightbox background)
+$c-black: hsl(0, 0%, 0%);
+
+$font-family: "Kumbh Sans", sans-serif;
+
+$font-weights: (
+  "normal": 400,
+  "bold": 700,
+);
+
+@function fontWeight($name) {
+  @return map-get($font-weights, $name);
+}
+
+/*=== DEVICE ==*/
+$mq-m: 375px; //mobile
+$mq-d: 1440px; //desktop
+
+/*=== MARGINS ===*/
+$mb-1: 0.5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
